@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password — Bingwa Auto</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    :root {
+      --bg: #08110F;
+      --surface: #101B18;
+      --surface2: #172623;
+      --primary: #56E39F;
+      --primary-container: #0E3B28;
+      --on-primary: #082316;
+      --on-bg: #E8F6F0;
+      --on-surface: #E8F6F0;
+      --on-surface-variant: #B7CAC2;
+      --outline: #3A524B;
+      --error: #FF7A7A;
+      --error-container: #3E1515;
+      --on-error-container: #FFA4A4;
+      --success-container: #123725;
+      --on-success-container: #8FF0BC;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--on-bg);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background:
+        radial-gradient(ellipse 70% 40% at 50% 0%, rgba(86,227,159,0.06) 0%, transparent 60%),
+        linear-gradient(180deg, #08110F 0%, #0E2420 50%, #08110F 100%);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--outline);
+      border-radius: 24px;
+      padding: 40px 36px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(86,227,159,0.04);
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .logo-ring {
+      width: 64px;
+      height: 64px;
+      background: var(--primary-container);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(86,227,159,0.15);
+    }
+
+    .logo-ring svg {
+      width: 32px;
+      height: 32px;
+      color: var(--primary);
+    }
+
+    h1 {
+      font-size: 1.625rem;
+      font-weight: 900;
+      color: var(--on-bg);
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      color: var(--on-surface-variant);
+      line-height: 1.5;
+    }
+
+    .brand {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.01em;
+    }
+
+    /* States */
+    .state { display: none; }
+    .state.active { display: block; }
+
+    /* Loading spinner */
+    .spinner-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 0;
+    }
+
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid var(--outline);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .spinner-text {
+      color: var(--on-surface-variant);
+      font-size: 0.875rem;
+    }
+
+    /* Form */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--on-surface-variant);
+      letter-spacing: 0.01em;
+    }
+
+    .input-wrap {
+      position: relative;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      background: var(--surface2);
+      border: 1.5px solid var(--outline);
+      border-radius: 14px;
+      padding: 14px 46px 14px 16px;
+      font-size: 1rem;
+      color: var(--on-bg);
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      font-family: inherit;
+    }
+
+    input[type="password"]:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(86,227,159,0.12);
+    }
+
+    input[type="password"].error-field {
+      border-color: var(--error);
+      box-shadow: 0 0 0 3px rgba(255,122,122,0.12);
+    }
+
+    .toggle-pw {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      color: var(--on-surface-variant);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      transition: color 0.15s;
+    }
+
+    .toggle-pw:hover { color: var(--on-bg); }
+
+    /* Password strength */
+    .strength-bar {
+      display: flex;
+      gap: 4px;
+      margin-top: 6px;
+    }
+
+    .strength-segment {
+      height: 3px;
+      flex: 1;
+      background: var(--outline);
+      border-radius: 99px;
+      transition: background 0.2s;
+    }
+
+    .strength-segment.weak { background: var(--error); }
+    .strength-segment.fair { background: #FFC96B; }
+    .strength-segment.good { background: #7ED7FF; }
+    .strength-segment.strong { background: var(--primary); }
+
+    .strength-label {
+      font-size: 0.75rem;
+      color: var(--on-surface-variant);
+      margin-top: 4px;
+    }
+
+    .supporting-text {
+      font-size: 0.75rem;
+      color: var(--error);
+      margin-top: 4px;
+      min-height: 16px;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      width: 100%;
+      background: var(--primary);
+      color: var(--on-primary);
+      border: none;
+      border-radius: 14px;
+      padding: 15px;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.15s, transform 0.1s;
+      letter-spacing: -0.01em;
+    }
+
+    .btn-primary:hover:not(:disabled) { opacity: 0.9; }
+    .btn-primary:active:not(:disabled) { transform: scale(0.99); }
+    .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    .btn-primary.loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-primary.loading .spinner {
+      width: 18px;
+      height: 18px;
+      border-width: 2px;
+      border-top-color: var(--on-primary);
+      border-color: rgba(8,35,22,0.3);
+      border-top-color: var(--on-primary);
+    }
+
+    /* Banners */
+    .banner {
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+
+    .banner-error {
+      background: var(--error-container);
+      color: var(--on-error-container);
+      border: 1px solid rgba(255,122,122,0.2);
+    }
+
+    .banner-success {
+      background: var(--success-container);
+      color: var(--on-success-container);
+      border: 1px solid rgba(86,227,159,0.2);
+    }
+
+    .banner-icon {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .banner-icon svg { flex-shrink: 0; margin-top: 1px; }
+
+    /* Back link */
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.875rem;
+      color: var(--on-surface-variant);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .back-link:hover { color: var(--primary); }
+    .back-link span { color: var(--primary); font-weight: 600; }
+
+    /* Success icon */
+    .success-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--success-container);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      border: 1px solid rgba(86,227,159,0.2);
+    }
+
+    .success-icon svg { color: var(--primary); }
+
+    .success-content { text-align: center; }
+
+    .success-content h2 {
+      font-size: 1.375rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .success-content p {
+      color: var(--on-surface-variant);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    /* Redirect countdown */
+    .countdown {
+      font-size: 0.8125rem;
+      color: var(--on-surface-variant);
+      margin-top: 14px;
+    }
+
+    .countdown span {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* Error state */
+    .error-content { text-align: center; }
+
+    .error-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--error-container);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .error-icon svg { color: var(--error); }
+
+    .error-content h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: var(--error);
+    }
+
+    .error-content p {
+      color: var(--on-surface-variant);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 32px 24px; border-radius: 20px; }
+      h1 { font-size: 1.375rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="header">
+    <div class="logo-ring">
+      <!-- AutoAwesome / spark icon matching app -->
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"/>
+      </svg>
+    </div>
+    <div>
+      <div class="brand">Bingwa Auto</div>
+      <h1>Reset Password</h1>
+    </div>
+  </div>
+
+  <!-- STATE: Loading -->
+  <div id="state-loading" class="state active">
+    <div class="spinner-wrap">
+      <div class="spinner"></div>
+      <div class="spinner-text">Verifying your reset link…</div>
+    </div>
+  </div>
+
+  <!-- STATE: Invalid link -->
+  <div id="state-invalid" class="state">
+    <div class="error-content">
+      <div class="error-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+        </svg>
+      </div>
+      <h2>Link Invalid or Expired</h2>
+      <p id="invalid-message">This password reset link is invalid or has already been used. Please request a new one from the app.</p>
+    </div>
+    <a href="https://www.bingwaauto.co.ke" class="back-link">← <span>Back to Bingwa Auto</span></a>
+  </div>
+
+  <!-- STATE: Password form -->
+  <div id="state-form" class="state">
+    <p class="subtitle" style="margin-bottom:24px;">Enter a new password for your Bingwa Auto agent account.</p>
+
+    <div id="form-error" class="banner banner-error banner-icon" style="display:none; margin-bottom:16px;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color:var(--error)">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+      </svg>
+      <span id="form-error-text"></span>
+    </div>
+
+    <div class="form-group">
+      <div class="field">
+        <label for="new-password">New Password</label>
+        <div class="input-wrap">
+          <input type="password" id="new-password" placeholder="At least 8 characters" autocomplete="new-password" />
+          <button class="toggle-pw" type="button" onclick="togglePw('new-password', this)" aria-label="Toggle password visibility">
+            <svg id="eye-new" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          </button>
+        </div>
+        <div class="strength-bar" id="strength-bar">
+          <div class="strength-segment" id="seg1"></div>
+          <div class="strength-segment" id="seg2"></div>
+          <div class="strength-segment" id="seg3"></div>
+          <div class="strength-segment" id="seg4"></div>
+        </div>
+        <div class="strength-label" id="strength-label"></div>
+      </div>
+
+      <div class="field">
+        <label for="confirm-password">Confirm Password</label>
+        <div class="input-wrap">
+          <input type="password" id="confirm-password" placeholder="Re-enter your password" autocomplete="new-password" />
+          <button class="toggle-pw" type="button" onclick="togglePw('confirm-password', this)" aria-label="Toggle password visibility">
+            <svg id="eye-confirm" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          </button>
+        </div>
+        <div class="supporting-text" id="confirm-error"></div>
+      </div>
+
+      <button class="btn-primary" id="submit-btn" onclick="submitReset()" disabled>
+        Set New Password
+      </button>
+    </div>
+  </div>
+
+  <!-- STATE: Success -->
+  <div id="state-success" class="state">
+    <div class="success-content">
+      <div class="success-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+        </svg>
+      </div>
+      <h2>Password Updated</h2>
+      <p>Your password has been changed successfully. You can now sign in to Bingwa Auto with your new password.</p>
+
+      <button class="btn-primary" onclick="openApp()">Open Bingwa Auto App</button>
+
+      <div class="countdown" id="countdown-text"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Firebase SDK — loaded from CDN, no API key in HTML (uses existing Firebase project config) -->
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+  import { getAuth, verifyPasswordResetCode, confirmPasswordReset } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+
+  // Firebase config — uses the project from google-services.json
+  // API key is a web client key (not Android), must be added here.
+  // This value is safe to expose in client-side code (Firebase security is via rules).
+  const firebaseConfig = {
+    apiKey: "AIzaSyDVlH7oI2prRQVCWzSMYWl3I9buzbqJuuw",
+    authDomain: "bingwa-auto.firebaseapp.com",
+    projectId: "bingwa-auto",
+    storageBucket: "bingwa-auto.firebasestorage.app",
+    messagingSenderId: "881299771709",
+    appId: "1:881299771709:android:9f860314af7804e22bb554"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  // ── Parse URL parameters ──────────────────────────────────────────────────
+
+  function getParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+      mode: params.get('mode'),
+      oobCode: params.get('oobCode'),
+      continueUrl: params.get('continueUrl') || null,
+      lang: params.get('lang') || 'en'
+    };
+  }
+
+  // ── State machine ─────────────────────────────────────────────────────────
+
+  function showState(id) {
+    document.querySelectorAll('.state').forEach(el => el.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+
+  function showError(message) {
+    showState('state-invalid');
+    document.getElementById('invalid-message').textContent = message;
+  }
+
+  // ── Password strength ────────────────────────────────────────────────────
+
+  function measureStrength(pw) {
+    if (!pw) return { score: 0, label: '' };
+    let score = 0;
+    if (pw.length >= 8) score++;
+    if (pw.length >= 12) score++;
+    if (/[A-Z]/.test(pw) && /[a-z]/.test(pw)) score++;
+    if (/[0-9]/.test(pw)) score++;
+    if (/[^A-Za-z0-9]/.test(pw)) score++;
+    // Cap to 4
+    const capped = Math.min(4, score);
+    const labels = ['', 'Weak', 'Fair', 'Good', 'Strong'];
+    const classes = ['', 'weak', 'fair', 'good', 'strong'];
+    return { score: capped, label: labels[capped], cls: classes[capped] };
+  }
+
+  function updateStrength(pw) {
+    const { score, label, cls } = measureStrength(pw);
+    for (let i = 1; i <= 4; i++) {
+      const seg = document.getElementById('seg' + i);
+      seg.className = 'strength-segment';
+      if (i <= score) seg.classList.add(cls);
+    }
+    document.getElementById('strength-label').textContent = label ? `Strength: ${label}` : '';
+  }
+
+  // ── Toggle password visibility ────────────────────────────────────────────
+
+  window.togglePw = function(inputId, btn) {
+    const input = document.getElementById(inputId);
+    const isHidden = input.type === 'password';
+    input.type = isHidden ? 'text' : 'password';
+    btn.querySelector('svg').innerHTML = isHidden
+      ? '<path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>'
+      : '<path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>';
+  };
+
+  // ── Validation ───────────────────────────────────────────────────────────
+
+  function validate() {
+    const pw = document.getElementById('new-password').value;
+    const confirm = document.getElementById('confirm-password').value;
+    const btn = document.getElementById('submit-btn');
+    const confirmErr = document.getElementById('confirm-error');
+    const pwInput = document.getElementById('new-password');
+    const confirmInput = document.getElementById('confirm-password');
+
+    updateStrength(pw);
+
+    let valid = true;
+
+    if (pw.length > 0 && pw.length < 8) {
+      pwInput.classList.add('error-field');
+      valid = false;
+    } else {
+      pwInput.classList.remove('error-field');
+    }
+
+    if (confirm.length > 0 && confirm !== pw) {
+      confirmErr.textContent = 'Passwords do not match.';
+      confirmInput.classList.add('error-field');
+      valid = false;
+    } else {
+      confirmErr.textContent = '';
+      confirmInput.classList.remove('error-field');
+    }
+
+    btn.disabled = !(pw.length >= 8 && pw === confirm && confirm.length > 0);
+    return btn.disabled === false;
+  }
+
+  document.getElementById('new-password').addEventListener('input', validate);
+  document.getElementById('confirm-password').addEventListener('input', validate);
+
+  document.getElementById('confirm-password').addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !document.getElementById('submit-btn').disabled) {
+      submitReset();
+    }
+  });
+
+  // ── Submit ───────────────────────────────────────────────────────────────
+
+  let verifiedEmail = null;
+
+  window.submitReset = async function() {
+    if (!validate()) return;
+
+    const btn = document.getElementById('submit-btn');
+    const formError = document.getElementById('form-error');
+    const formErrorText = document.getElementById('form-error-text');
+    const pw = document.getElementById('new-password').value;
+    const { oobCode } = getParams();
+
+    btn.disabled = true;
+    btn.classList.add('loading');
+    btn.innerHTML = '<div class="spinner"></div> Updating…';
+    formError.style.display = 'none';
+
+    try {
+      await confirmPasswordReset(auth, oobCode, pw);
+      showState('state-success');
+      startCountdown();
+    } catch (err) {
+      btn.classList.remove('loading');
+      btn.disabled = false;
+      btn.textContent = 'Set New Password';
+
+      const msg = friendlyError(err.code);
+      formErrorText.textContent = msg;
+      formError.style.display = 'flex';
+    }
+  };
+
+  // ── Success countdown ────────────────────────────────────────────────────
+
+  window.openApp = function() {
+    // Try to open the app via deep link first
+    const appDeepLink = 'bingwaauto://';
+    window.location.href = appDeepLink;
+    // Fallback: just show nothing — user has already been told to open app
+  };
+
+  function startCountdown() {
+    let seconds = 10;
+    const el = document.getElementById('countdown-text');
+    el.innerHTML = `Redirecting in <span>${seconds}</span>s…`;
+
+    const interval = setInterval(() => {
+      seconds--;
+      if (seconds <= 0) {
+        clearInterval(interval);
+        el.textContent = '';
+        // Redirect to a safe fallback — not the app store, just the domain
+        window.location.href = 'https://www.bingwaauto.co.ke';
+      } else {
+        el.innerHTML = `Redirecting in <span>${seconds}</span>s…`;
+      }
+    }, 1000);
+  }
+
+  // ── Error messages ───────────────────────────────────────────────────────
+
+  function friendlyError(code) {
+    switch (code) {
+      case 'auth/expired-action-code':
+        return 'This reset link has expired. Please request a new one.';
+      case 'auth/invalid-action-code':
+        return 'This reset link is invalid or has already been used.';
+      case 'auth/user-disabled':
+        return 'This account has been disabled. Please contact support.';
+      case 'auth/user-not-found':
+        return 'No account found for this reset link.';
+      case 'auth/weak-password':
+        return 'Password is too weak. Use at least 8 characters with a mix of letters and numbers.';
+      case 'auth/network-request-failed':
+        return 'Network error. Please check your connection and try again.';
+      default:
+        return 'Something went wrong. Please try again or request a new reset link.';
+    }
+  }
+
+  // ── Initialise ───────────────────────────────────────────────────────────
+
+  async function init() {
+    const { mode, oobCode } = getParams();
+
+    // Guard against malformed URLs
+    if (!mode || !oobCode) {
+      showError('This link is missing required parameters. Please use the link sent to your email.');
+      return;
+    }
+
+    if (mode !== 'resetPassword') {
+      showError(`This page only handles password resets. Received mode: "${mode}".`);
+      return;
+    }
+
+    // Verify the oobCode is still valid before showing the form
+    try {
+      verifiedEmail = await verifyPasswordResetCode(auth, oobCode);
+      // Code is valid — show the form
+      showState('state-form');
+    } catch (err) {
+      const msg = err.code === 'auth/expired-action-code'
+        ? 'This password reset link has expired. Links are only valid for 1 hour. Please request a new one from the Bingwa Auto app.'
+        : err.code === 'auth/invalid-action-code'
+        ? 'This reset link has already been used or is invalid. Please request a new one from the Bingwa Auto app.'
+        : 'Unable to verify this reset link. It may be invalid or expired. Please request a new one from the Bingwa Auto app.';
+      showError(msg);
+    }
+  }
+
+  init();
+</script>
+
+</body>
+</html>
