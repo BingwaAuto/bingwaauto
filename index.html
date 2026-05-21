@@ -673,12 +673,15 @@ footer{
     <li><a href="#features">Features</a></li>
     <li><a href="#pricing">Pricing</a></li>
   </ul>
-  <button class="nav-btn" onclick="triggerDownload('nav-dl','nav-status','nav-fill','nav-msg')">
+  <button class="nav-btn" id="nav-dl" onclick="triggerDownload('nav-dl','nav-status','nav-fill','nav-msg')">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-    Download APK
+    <span id="nav-dl-txt">Download APK</span>
   </button>
-  <!-- hidden mini status for nav btn -->
-  <div id="nav-status" style="display:none"></div>
+  <!-- mini dropdown status panel for nav btn -->
+  <div id="nav-status" style="display:none;position:absolute;top:68px;right:40px;background:var(--black2);border:1px solid var(--green-border);border-radius:10px;padding:10px 16px;min-width:260px;flex-direction:column;gap:6px;z-index:2000;box-shadow:0 12px 40px rgba(0,0,0,.6)">
+    <div class="dl-msg" id="nav-msg">Connecting to GitHub…</div>
+    <div class="dl-bar-track"><div class="dl-bar-fill" id="nav-fill"></div></div>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -1021,15 +1024,18 @@ async function triggerDownload(btnId, statusId, fillId, msgId) {
   const msg    = document.getElementById(msgId);
   const txtEl  = document.getElementById(btnId + '-txt'); // hero-dl-txt / cta-dl-txt
 
-  if (!status) return; // nav btn — just opens GH releases
+  if (!status || !btn) return;
   if (btn.classList.contains('busy')) return;
+
+  // nav status uses inline style; hero/cta use .show class
+  const showStatus = () => status.classList.contains('dl-status') ? status.classList.add('show')    : (status.style.display = 'flex');
+  const hideStatus = () => status.classList.contains('dl-status') ? status.classList.remove('show') : (status.style.display = 'none');
 
   btn.classList.add('busy');
   if (txtEl) txtEl.textContent = 'Fetching release…';
-  status.classList.add('show');
-  fill.classList.add('pulse');
-  msg.style.color = 'var(--green)';
-  msg.textContent = 'Connecting to GitHub…';
+  showStatus();
+  if (fill) fill.classList.add('pulse');
+  if (msg)  { msg.style.color = 'var(--green)'; msg.textContent = 'Connecting to GitHub…'; }
 
   try {
     const res = await fetch(GITHUB_API, {
@@ -1047,13 +1053,12 @@ async function triggerDownload(btnId, statusId, fillId, msgId) {
     const version = (data.tag_name || 'latest').replace(/^v/i, '');
     const sizeMB  = (apk.size / 1024 / 1024).toFixed(1);
 
-    msg.textContent = `Found v${version} (${sizeMB} MB) — starting download…`;
+    if (msg) msg.textContent = `Found v${version} (${sizeMB} MB) — starting download…`;
     await new Promise(r => setTimeout(r, 500));
 
     /* trigger browser download without leaving the page */
-    fill.classList.remove('pulse');
-    fill.style.width = '100%';
-    msg.textContent  = `⬇ Downloading ${apk.name}…`;
+    if (fill) { fill.classList.remove('pulse'); fill.style.width = '100%'; }
+    if (msg)  msg.textContent = `⬇ Downloading ${apk.name}…`;
     if (txtEl) txtEl.textContent = 'Downloading…';
 
     const a = Object.assign(document.createElement('a'), {
@@ -1066,29 +1071,27 @@ async function triggerDownload(btnId, statusId, fillId, msgId) {
 
     /* success */
     await new Promise(r => setTimeout(r, 900));
-    msg.textContent  = '✓ Download started — check your downloads folder';
+    if (msg)  msg.textContent = '✓ Download started — check your downloads folder';
     if (txtEl) txtEl.textContent = '✓ Downloaded!';
     btn.style.background = 'var(--green2)';
 
     setTimeout(() => {
       btn.classList.remove('busy');
       btn.style.background = '';
-      if (txtEl) txtEl.textContent = 'Download APK — Free';
-      status.classList.remove('show');
-      fill.style.width = '0';
+      if (txtEl) txtEl.textContent = 'Download APK';
+      hideStatus();
+      if (fill) fill.style.width = '0';
     }, 5000);
 
   } catch (err) {
-    fill.classList.remove('pulse');
-    fill.style.width = '0';
-    msg.style.color  = '#ff6b6b';
-    msg.textContent  = '⚠ ' + err.message;
-    if (txtEl) txtEl.textContent = 'Download APK — Free';
+    if (fill) { fill.classList.remove('pulse'); fill.style.width = '0'; }
+    if (msg)  { msg.style.color = '#ff6b6b'; msg.textContent = '⚠ ' + err.message; }
+    if (txtEl) txtEl.textContent = 'Download APK';
     btn.classList.remove('busy');
 
     setTimeout(() => {
-      status.classList.remove('show');
-      msg.style.color = 'var(--green)';
+      hideStatus();
+      if (msg) msg.style.color = 'var(--green)';
     }, 6000);
   }
 }
