@@ -8,7 +8,7 @@ This repository hosts production Android releases, update packages, changelogs, 
 
 Applications distributed through this repository may include:
 
-* Bingwa Companion
+* Bingwa Auto
 * Automation tools
 * Mobile utility applications
 * Enterprise Android solutions
