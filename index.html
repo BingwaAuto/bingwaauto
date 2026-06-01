@@ -674,6 +674,104 @@ footer{
 .reveal.in{opacity:1;transform:translateY(0)}
 </style>
 </head>
+  <!-- Firebase SDKs -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+
+  // TODO: Replace with your actual Firebase Web Config from Project Settings
+  const firebaseConfig = {
+  apiKey: "AIzaSyB-sI51bsobszwZdsOQU8dmYEZRDGtKAXc",
+  authDomain: "bingwa-auto.firebaseapp.com",
+  projectId: "bingwa-auto",
+  storageBucket: "bingwa-auto.firebasestorage.app",
+  messagingSenderId: "881299771709",
+  appId: "1:881299771709:web:872b7c8389d1241e2bb554",
+  measurementId: "G-5F03BWNPNG"
+};
+
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Make the download function available globally
+  window.triggerDownload = async function(btnId, statusId, fillId, msgId) {
+    const btn    = document.getElementById(btnId);
+    const status = document.getElementById(statusId);
+    const fill   = document.getElementById(fillId);
+    const msg    = document.getElementById(msgId);
+    const txtEl  = document.getElementById(btnId + '-txt');
+
+    if (!status || !btn) return;
+    if (btn.classList.contains('busy')) return;
+
+    const showStatus = () => status.classList.contains('dl-status') ? status.classList.add('show') : (status.style.display = 'flex');
+    const hideStatus = () => status.classList.contains('dl-status') ? status.classList.remove('show') : (status.style.display = 'none');
+
+    btn.classList.add('busy');
+    if (txtEl) txtEl.textContent = 'Fetching release…';
+    showStatus();
+    if (fill) fill.classList.add('pulse');
+    if (msg)  { msg.style.color = 'var(--green)'; msg.textContent = 'Connecting to server…'; }
+
+    try {
+      // 1. Fetch from Firestore (No rate limits!)
+      const docRef = doc(db, "app_config", "updater");
+      const docSnap = await getDoc(docRef);
+
+      if (!docSnap.exists()) throw new Error("Update configuration not found.");
+      
+      const data = docSnap.data();
+      const downloadUrl = data.downloadUrl;
+      const version = data.latestVersion;
+
+      if (!downloadUrl) throw new Error("Download link is missing.");
+
+      if (msg) msg.textContent = `Found ${version} — starting download…`;
+      await new Promise(r => setTimeout(r, 500));
+
+      /* trigger browser download */
+      if (fill) { fill.classList.remove('pulse'); fill.style.width = '100%'; }
+      if (msg)  msg.textContent = `⬇ Downloading APK…`;
+      if (txtEl) txtEl.textContent = 'Downloading…';
+
+      const a = Object.assign(document.createElement('a'), {
+        href: downloadUrl,
+        download: `BingwaAuto-${version}.apk`,
+      });
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      /* success */
+      await new Promise(r => setTimeout(r, 900));
+      if (msg)  msg.textContent = '✓ Download started';
+      if (txtEl) txtEl.textContent = '✓ Downloaded!';
+      btn.style.background = 'var(--green2)';
+
+      setTimeout(() => {
+        btn.classList.remove('busy');
+        btn.style.background = '';
+        if (txtEl) txtEl.textContent = 'Download APK';
+        hideStatus();
+        if (fill) fill.style.width = '0';
+      }, 5000);
+
+    } catch (err) {
+      console.error(err);
+      if (fill) { fill.classList.remove('pulse'); fill.style.width = '0'; }
+      if (msg)  { msg.style.color = '#ff6b6b'; msg.textContent = '⚠ ' + err.message; }
+      if (txtEl) txtEl.textContent = 'Download APK';
+      btn.classList.remove('busy');
+
+      setTimeout(() => {
+        hideStatus();
+        if (msg) msg.style.color = 'var(--green)';
+      }, 6000);
+    }
+  };
+</script>
 <body>
 
 <!-- NAV -->
@@ -1033,88 +1131,6 @@ window.addEventListener('DOMContentLoaded', () => {
     right.style.opacity = '1'; right.style.transform = 'translateX(0)';
   }));
 });
-
-/* ── GitHub APK download (no navigation) ───────────────────── */
-const GITHUB_API = 'https://api.github.com/repos/BingwaAuto/bingwaauto/releases/latest';
-
-async function triggerDownload(btnId, statusId, fillId, msgId) {
-  const btn    = document.getElementById(btnId);
-  const status = document.getElementById(statusId);
-  const fill   = document.getElementById(fillId);
-  const msg    = document.getElementById(msgId);
-  const txtEl  = document.getElementById(btnId + '-txt'); // hero-dl-txt / cta-dl-txt
-
-  if (!status || !btn) return;
-  if (btn.classList.contains('busy')) return;
-
-  // nav status uses inline style; hero/cta use .show class
-  const showStatus = () => status.classList.contains('dl-status') ? status.classList.add('show')    : (status.style.display = 'flex');
-  const hideStatus = () => status.classList.contains('dl-status') ? status.classList.remove('show') : (status.style.display = 'none');
-
-  btn.classList.add('busy');
-  if (txtEl) txtEl.textContent = 'Fetching release…';
-  showStatus();
-  if (fill) fill.classList.add('pulse');
-  if (msg)  { msg.style.color = 'var(--green)'; msg.textContent = 'Connecting to GitHub…'; }
-
-  try {
-    const res = await fetch(GITHUB_API, {
-      headers: { Accept: 'application/vnd.github+json' }
-    });
-
-    if (!res.ok) throw new Error(`GitHub responded with ${res.status}. Check your connection.`);
-
-    const data   = await res.json();
-    const assets = data.assets ?? [];
-    const apk    = assets.find(a => a.name.toLowerCase().endsWith('.apk'));
-
-    if (!apk) throw new Error('No APK asset found in the latest release.');
-
-    const version = (data.tag_name || 'latest').replace(/^v/i, '');
-    const sizeMB  = (apk.size / 1024 / 1024).toFixed(1);
-
-    if (msg) msg.textContent = `Found v${version} (${sizeMB} MB) — starting download…`;
-    await new Promise(r => setTimeout(r, 500));
-
-    /* trigger browser download without leaving the page */
-    if (fill) { fill.classList.remove('pulse'); fill.style.width = '100%'; }
-    if (msg)  msg.textContent = `⬇ Downloading ${apk.name}…`;
-    if (txtEl) txtEl.textContent = 'Downloading…';
-
-    const a = Object.assign(document.createElement('a'), {
-      href: apk.browser_download_url,
-      download: apk.name,
-    });
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-
-    /* success */
-    await new Promise(r => setTimeout(r, 900));
-    if (msg)  msg.textContent = '✓ Download started — check your downloads folder';
-    if (txtEl) txtEl.textContent = '✓ Downloaded!';
-    btn.style.background = 'var(--green2)';
-
-    setTimeout(() => {
-      btn.classList.remove('busy');
-      btn.style.background = '';
-      if (txtEl) txtEl.textContent = 'Download APK';
-      hideStatus();
-      if (fill) fill.style.width = '0';
-    }, 5000);
-
-  } catch (err) {
-    if (fill) { fill.classList.remove('pulse'); fill.style.width = '0'; }
-    if (msg)  { msg.style.color = '#ff6b6b'; msg.textContent = '⚠ ' + err.message; }
-    if (txtEl) txtEl.textContent = 'Download APK';
-    btn.classList.remove('busy');
-
-    setTimeout(() => {
-      hideStatus();
-      if (msg) msg.style.color = 'var(--green)';
-    }, 6000);
-  }
-}
 </script>
 </body>
 </html>
