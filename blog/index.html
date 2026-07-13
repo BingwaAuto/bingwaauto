@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Blog articles, guides, and tips for Bingwa Sokoni agents. Learn how to automate your business and maximize earnings with Bingwa Auto."/>
+  <meta name="author" content="Bingwa Auto"/>
+  <title>Blog — Bingwa Sokoni Guides & Tips | Bingwa Auto</title>
+  <link rel="canonical" href="https://www.bingwaauto.co.ke/blog/"/>
+  <meta name="robots" content="index, follow"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog — Bingwa Sokoni Guides & Tips | Bingwa Auto"/>
+  <meta property="og:description" content="Blog articles, guides, and tips for Bingwa Sokoni agents. Learn how to automate your business and maximize earnings."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.bingwaauto.co.ke/blog/"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  
+  <style>
+    /* ===== Copy the exact same styles from index.html ===== */
+    /* (Include all the styles from your index.html here) */
+    
+    /* For brevity, I've included only the blog-specific styles below */
+    /* But you should copy ALL styles from your index.html into this file */
+    
+    /* ─── Blog Index Specific ──────────────────────────────────── */
+    .blog-header {
+      padding: 120px 0 60px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,.04);
+    }
+    .blog-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      letter-spacing: -.03em;
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+    .blog-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      font-weight: 300;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .blog-archive {
+      padding: 60px 0 120px;
+    }
+    .blog-archive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 32px;
+    }
+    .blog-archive-card {
+      background: var(--black2);
+      border: 1px solid rgba(255,255,255,.05);
+      border-radius: 24px;
+      padding: 32px 28px;
+      transition: all .3s ease;
+      position: relative;
+    }
+    .blog-archive-card:hover {
+      border-color: var(--green-border);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0,0,0,.4);
+    }
+    .blog-archive-card .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .blog-archive-card .meta span {
+      font-size: .7rem;
+      background: var(--surface);
+      color: var(--muted);
+      padding: 3px 14px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,.04);
+    }
+    .blog-archive-card .meta .featured {
+      background: var(--green-dim);
+      color: var(--green);
+      border-color: var(--green-border);
+    }
+    .blog-archive-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .blog-archive-card h3 a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .blog-archive-card h3 a:hover {
+      color: var(--green);
+    }
+    .blog-archive-card .excerpt {
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 300;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    .blog-archive-card .footer-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: .8rem;
+      color: var(--muted);
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,.04);
+    }
+    .blog-archive-card .footer-meta .read-link {
+      color: var(--green);
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .blog-archive-card .footer-meta .read-link:hover {
+      text-decoration: underline;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 80px 0;
+      color: var(--muted);
+    }
+    .empty-state h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green);
+      font-weight: 500;
+      border: 1px solid var(--green-border);
+      border-radius: 60px;
+      padding: 12px 32px;
+      transition: all .3s;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .back-home:hover {
+      background: var(--green-dim);
+      transform: translateY(-2px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .blog-archive-grid {
+        grid-template-columns: 1fr;
+      }
+      .blog-header {
+        padding: 100px 0 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV (copy from index.html) -->
+<nav>
+  <a href="/" class="nav-brand">
+    <div class="nav-mark">⚡</div>
+    Bingwa Auto
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#how">How it works</a></li>
+    <li><a href="/#features">Features</a></li>
+    <li><a href="/#pricing">Pricing</a></li>
+    <li><a href="/#contacts">Contact</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <button class="nav-btn" id="nav-dl" onclick="triggerDownload('nav-dl','nav-status','nav-fill','nav-msg')">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    <span id="nav-dl-txt">Download APK</span>
+  </button>
+  <div id="nav-status" style="display:none;position:absolute;top:68px;right:40px;background:var(--black2);border:1px solid var(--green-border);border-radius:10px;padding:10px 16px;min-width:260px;flex-direction:column;gap:6px;z-index:2000;box-shadow:0 12px 40px rgba(0,0,0,.6)">
+    <div class="dl-msg" id="nav-msg">Connecting to server…</div>
+    <div class="dl-bar-track"><div class="dl-bar-fill" id="nav-fill"></div></div>
+  </div>
+</nav>
+
+<!-- BLOG HEADER -->
+<section class="blog-header">
+  <div class="container">
+    <span class="tag" style="margin-bottom:20px;">📝 Articles & Guides</span>
+    <h1>Bingwa Sokoni Blog</h1>
+    <p>Guides, tips, and resources to help you maximize your earnings as a Bingwa Sokoni agent.</p>
+  </div>
+</section>
+
+<!-- BLOG ARCHIVE -->
+<section class="blog-archive">
+  <div class="container">
+    <div class="blog-archive-grid">
+
+      <!-- Blog Post 1 -->
+      <article class="blog-archive-card">
+        <div class="meta">
+          <span class="featured">⭐ Featured</span>
+          <span>Guide</span>
+          <span>7 min read</span>
+        </div>
+        <h3><a href="/blog/how-to-join-bingwa-sokoni.html">How to Join Bingwa Sokoni in Kenya (2026 Guide)</a></h3>
+        <p class="excerpt">Step-by-step registration guide for Bingwa Sokoni agents. Learn the easy 5-step process and discover how to automate your sales with Bingwa Auto.</p>
+        <div class="footer-meta">
+          <span>📅 July 13, 2026</span>
+          <a href="/blog/how-to-join-bingwa-sokoni.html" class="read-link">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Blog Post 2 (Coming Soon) -->
+      <article class="blog-archive-card" style="opacity:0.5;">
+        <div class="meta">
+          <span>Coming Soon</span>
+        </div>
+        <h3 style="color:var(--muted);">How to Maximize Your Bingwa Sokoni Earnings</h3>
+        <p class="excerpt" style="color:var(--faint);">Tips and strategies to increase your commissions and grow your agent business effectively.</p>
+        <div class="footer-meta">
+          <span>📅 Coming soon</span>
+          <span style="color:var(--faint);">—</span>
+        </div>
+      </article>
+
+      <!-- Blog Post 3 (Coming Soon) -->
+      <article class="blog-archive-card" style="opacity:0.5;">
+        <div class="meta">
+          <span>Coming Soon</span>
+        </div>
+        <h3 style="color:var(--muted);">Bingwa Sokoni USSD Codes Cheat Sheet</h3>
+        <p class="excerpt" style="color:var(--faint);">A complete reference of all USSD codes for selling bundles, airtime, and other products.</p>
+        <div class="footer-meta">
+          <span>📅 Coming soon</span>
+          <span style="color:var(--faint);">—</span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Back to Home -->
+    <div style="text-align:center; margin-top:60px;">
+      <a href="/" class="back-home">← Back to Home</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (copy from index.html) -->
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-brand">Bingwa Auto</div>
+      <div class="foot-links">
+        <a href="/blog/">Blog</a>
+        <a href="/#contacts">Contact</a>
+        <a href="/#pricing">Pricing</a>
+      </div>
+      <div class="foot-copy">© 2025 Bingwa Auto. Made for Kenyan Bingwa Sokoni agents.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Firebase Download Script (copy from index.html) -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyB-sI51bsobszwZdsOQU8dmYEZRDGtKAXc",
+    authDomain: "bingwa-auto.firebaseapp.com",
+    projectId: "bingwa-auto",
+    storageBucket: "bingwa-auto.firebasestorage.app",
+    messagingSenderId: "881299771709",
+    appId: "1:881299771709:web:872b7c8389d1241e2bb554",
+    measurementId: "G-5F03BWNPNG"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  window.triggerDownload = async function(btnId, statusId, fillId, msgId) {
+    const btn = document.getElementById(btnId);
+    const status = document.getElementById(statusId);
+    const fill = document.getElementById(fillId);
+    const msg = document.getElementById(msgId);
+    const txtEl = document.getElementById(btnId + '-txt');
+
+    if (!status || !btn) return;
+    if (btn.classList.contains('busy')) return;
+
+    const showStatus = () => status.classList.contains('dl-status') ? status.classList.add('show') : (status.style.display = 'flex');
+    const hideStatus = () => status.classList.contains('dl-status') ? status.classList.remove('show') : (status.style.display = 'none');
+
+    btn.classList.add('busy');
+    if (txtEl) txtEl.textContent = 'Fetching release…';
+    showStatus();
+    if (fill) fill.classList.add('pulse');
+    if (msg) { msg.style.color = 'var(--green)'; msg.textContent = 'Connecting to server…'; }
+
+    try {
+      const docRef = doc(db, "app_config", "updater");
+      const docSnap = await getDoc(docRef);
+
+      if (!docSnap.exists()) throw new Error("Update configuration not found.");
+
+      const data = docSnap.data();
+      const downloadUrl = data.downloadUrl;
+      const version = data.latestVersion;
+
+      if (!downloadUrl) throw new Error("Download link is missing.");
+
+      if (msg) msg.textContent = `Found ${version} — starting download…`;
+      await new Promise(r => setTimeout(r, 500));
+
+      if (fill) { fill.classList.remove('pulse'); fill.style.width = '100%'; }
+      if (msg) msg.textContent = `⬇ Downloading APK…`;
+      if (txtEl) txtEl.textContent = 'Downloading…';
+
+      const a = Object.assign(document.createElement('a'), {
+        href: downloadUrl,
+        download: `BingwaAuto-${version}.apk`,
+      });
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      await new Promise(r => setTimeout(r, 900));
+      if (msg) msg.textContent = '✓ Download started';
+      if (txtEl) txtEl.textContent = '✓ Downloaded!';
+      btn.style.background = 'var(--green2)';
+
+      setTimeout(() => {
+        btn.classList.remove('busy');
+        btn.style.background = '';
+        if (txtEl) txtEl.textContent = 'Download APK';
+        hideStatus();
+        if (fill) fill.style.width = '0';
+      }, 5000);
+
+    } catch (err) {
+      console.error(err);
+      if (fill) { fill.classList.remove('pulse'); fill.style.width = '0'; }
+      if (msg) { msg.style.color = '#ff6b6b'; msg.textContent = '⚠ ' + err.message; }
+      if (txtEl) txtEl.textContent = 'Download APK';
+      btn.classList.remove('busy');
+
+      setTimeout(() => {
+        hideStatus();
+        if (msg) msg.style.color = 'var(--green)';
+      }, 6000);
+    }
+  };
+</script>
+
+<script>
+  /* ── Scroll reveal ─────────────────────────────────────────── */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
