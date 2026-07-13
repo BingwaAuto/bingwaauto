@@ -615,6 +615,94 @@
       text-decoration: underline;
     }
 
+    /* ─── In-Person Training Section ──────────────────────────── */
+    .training-card {
+      background: var(--black3);
+      border: 2px solid var(--green-border);
+      border-radius: 24px;
+      padding: 2rem 2.5rem;
+      margin: 2rem 0 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .training-card::before {
+      content: '🤝';
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+      font-size: 3.5rem;
+      opacity: 0.1;
+    }
+    .training-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+    .training-card p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+      max-width: 80%;
+    }
+    .training-card .highlight {
+      color: var(--green);
+      font-weight: 600;
+    }
+    .training-card .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, .05);
+    }
+    .training-card .contact-row .phone-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--green);
+      color: var(--black);
+      padding: 0.6rem 1.8rem;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: all .25s;
+    }
+    .training-card .contact-row .phone-link:hover {
+      background: var(--green2);
+      transform: scale(1.03);
+    }
+    .training-card .contact-row .phone-link svg {
+      width: 20px;
+      height: 20px;
+    }
+    .training-card .contact-row .note {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .training-card .contact-row .note strong {
+      color: var(--text);
+    }
+    @media (max-width: 768px) {
+      .training-card {
+        padding: 1.5rem;
+      }
+      .training-card p {
+        max-width: 100%;
+      }
+      .training-card::before {
+        font-size: 2.5rem;
+        right: 1rem;
+        top: 1rem;
+      }
+      .training-card .contact-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
     /* ─── CTA Download ────────────────────────────────────────── */
     .cta-download {
       background: var(--black3);
@@ -957,6 +1045,30 @@
       </tbody>
     </table>
 
+    <!-- ===== IN-PERSON TRAINING SECTION ===== -->
+    <h2>📌 Need Hands-On Help? We Offer Face-to-Face Training in Nairobi</h2>
+    <p>If you're in Nairobi and prefer a <strong>one-on-one session</strong>, we can meet in person and walk you through everything — from getting your Till Number to mastering Bingwa Sokoni and setting up Bingwa Auto.</p>
+
+    <div class="training-card reveal">
+      <h3>🤝 In-Person Setup &amp; Training</h3>
+      <p>
+        We'll sit down with you, answer all your questions, and make sure you're fully equipped to start selling. 
+        You'll learn <span class="highlight">everything</span> about Bingwa Sokoni — including how to automate your sales with Bingwa Auto.
+      </p>
+      <div class="contact-row">
+        <a href="tel:+254797677193" class="phone-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call 0797 677 193
+        </a>
+        <span class="note">
+          📍 Nairobi only &nbsp;·&nbsp; <strong>Agreed price</strong> (call for quote)
+        </span>
+      </div>
+      <p style="margin-top: 0.8rem; font-size: 0.9rem; color: var(--muted); max-width: 100%;">
+        We'll teach you everything — from registration to maximising your earnings. <strong>No prior experience needed.</strong>
+      </p>
+    </div>
+
     <!-- FAQ -->
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
@@ -968,6 +1080,7 @@
       <div class="faq-item"><strong>Does Bingwa Auto support Tunukiwa?</strong><p>Yes, it fully supports Tunukiwa offers and bundles.</p></div>
       <div class="faq-item"><strong>What if I serve many customers at once?</strong><p>Bingwa Auto's queue feature lets you handle multiple transactions seamlessly.</p></div>
       <div class="faq-item"><strong>Do I need a smartphone?</strong><p>Bingwa Auto works on any Android smartphone. Download it today!</p></div>
+      <div class="faq-item"><strong>Do you offer in-person training?</strong><p>Yes! We offer face-to-face setup and training in Nairobi. Call <a href="tel:+254797677193">0797 677 193</a> to book a session.</p></div>
     </div>
 
     <!-- Download CTA (reuse download button + Firebase JS) -->
@@ -1017,7 +1130,7 @@
       <ul>
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Twitter</a></li>
-        <li><a href="https://www.youtube.com/@bingwaauto">YouTube</a></li>
+        <li><a href="#">YouTube</a></li>
       </ul>
     </div>
   </div>
