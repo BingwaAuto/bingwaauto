@@ -785,6 +785,7 @@ footer{
     <li><a href="#features">Features</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#contacts">Contact</a></li>
+    <li><a href="/blog/">Blog</a></li>
   </ul>
   <button class="nav-btn" id="nav-dl" onclick="triggerDownload('nav-dl','nav-status','nav-fill','nav-msg')">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -1149,6 +1150,72 @@ footer{
           <div class="dl-bar-track" style="max-width:360px"><div class="dl-bar-fill pulse" id="cta-fill"></div></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section class="blog-section" style="padding:80px 0;">
+  <div class="container">
+    <div class="section-head reveal" style="text-align:center; margin-bottom:48px;">
+      <div class="section-tag" style="justify-content:center;display:flex;">
+        <span class="tag">Latest Articles</span>
+      </div>
+      <h2 class="section-title" style="margin-top:16px;">Tips &amp; Guides for Bingwa Sokoni Agents</h2>
+      <p class="section-sub" style="margin:0 auto;">Learn how to maximize your earnings and automate your business with these helpful guides.</p>
+    </div>
+
+    <div class="blog-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:24px;">
+      
+      <!-- Blog Card 1 -->
+      <article class="blog-card" style="background:var(--black2); border:1px solid rgba(255,255,255,.05); border-radius:20px; padding:28px 24px; transition:all .3s; cursor:pointer; position:relative;">
+        <a href="/blog/how-to-join-bingwa-sokoni.html" style="position:absolute;inset:0;z-index:1;"></a>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+          <span style="font-size:.65rem; background:var(--green-dim); color:var(--green); padding:2px 12px; border-radius:100px; border:1px solid var(--green-border);">Guide</span>
+          <span style="font-size:.65rem; background:var(--surface); color:var(--muted); padding:2px 12px; border-radius:100px;">7 min read</span>
+        </div>
+        <h3 style="font-family:'Playfair Display',serif; font-weight:700; font-size:1.3rem; margin-bottom:10px; color:var(--text); position:relative; z-index:2;">
+          <a href="/blog/how-to-join-bingwa-sokoni.html" style="color:inherit; transition:color .2s; text-decoration:none;" onmouseover="this.style.color='var(--green)'" onmouseout="this.style.color=''">How to Join Bingwa Sokoni in Kenya (2026 Guide)</a>
+        </h3>
+        <p style="color:var(--muted); font-size:.9rem; font-weight:300; margin-bottom:16px; position:relative; z-index:2;">Step-by-step registration guide for Bingwa Sokoni agents. Learn the easy 5-step process and automate your sales.</p>
+        <div style="display:flex; align-items:center; gap:12px; font-size:.8rem; color:var(--muted); position:relative; z-index:2;">
+          <span>📅 July 13, 2026</span>
+          <span style="width:3px; height:3px; background:var(--faint); border-radius:50%;"></span>
+          <span style="color:var(--green);">Read More →</span>
+        </div>
+      </article>
+
+      <!-- Blog Card 2 (Placeholder for future post) -->
+      <article class="blog-card" style="background:var(--black2); border:1px solid rgba(255,255,255,.05); border-radius:20px; padding:28px 24px; transition:all .3s; opacity:0.6; position:relative;">
+        <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+          <span style="font-size:.65rem; background:var(--surface); color:var(--muted); padding:2px 12px; border-radius:100px; border:1px solid var(--faint);">Coming Soon</span>
+        </div>
+        <h3 style="font-family:'Playfair Display',serif; font-weight:700; font-size:1.3rem; margin-bottom:10px; color:var(--muted);">How to Maximize Your Bingwa Sokoni Earnings</h3>
+        <p style="color:var(--faint); font-size:.9rem; font-weight:300; margin-bottom:16px;">Tips and strategies to increase your commissions and grow your agent business.</p>
+        <div style="display:flex; align-items:center; gap:12px; font-size:.8rem; color:var(--faint);">
+          <span>📅 Coming soon</span>
+        </div>
+      </article>
+
+      <!-- Blog Card 3 (Placeholder for future post) -->
+      <article class="blog-card" style="background:var(--black2); border:1px solid rgba(255,255,255,.05); border-radius:20px; padding:28px 24px; transition:all .3s; opacity:0.6; position:relative;">
+        <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+          <span style="font-size:.65rem; background:var(--surface); color:var(--muted); padding:2px 12px; border-radius:100px; border:1px solid var(--faint);">Coming Soon</span>
+        </div>
+        <h3 style="font-family:'Playfair Display',serif; font-weight:700; font-size:1.3rem; margin-bottom:10px; color:var(--muted);">Bingwa Sokoni USSD Codes Cheat Sheet</h3>
+        <p style="color:var(--faint); font-size:.9rem; font-weight:300; margin-bottom:16px;">A complete reference of all USSD codes for selling bundles, airtime, and more.</p>
+        <div style="display:flex; align-items:center; gap:12px; font-size:.8rem; color:var(--faint);">
+          <span>📅 Coming soon</span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- View All Blog Posts Link -->
+    <div style="text-align:center; margin-top:40px;">
+      <a href="/blog/" style="display:inline-flex; align-items:center; gap:10px; color:var(--green); font-weight:500; border:1px solid var(--green-border); border-radius:60px; padding:12px 32px; transition:all .3s; text-decoration:none;" onmouseover="this.style.background='var(--green-dim)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.background='transparent'; this.style.transform=''">
+        View All Articles →
+      </a>
     </div>
   </div>
 </section>
