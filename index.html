@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="canonical" href="https://www.bingwaauto.co.ke/" />
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Bingwa Auto offers Bingwa Sokoni Data Deals Automation services to Safaricom Bingwa Sokoni Agents" />
+  <meta name="description" content="Bingwa Auto automates Bingwa Sokoni bundle sales. Detects M-Pesa payments, matches offers, and executes USSD codes automatically. Download the free APK and start earning today." />
   <meta name="author" content="Bingwa Auto" />
-  <meta name="keywords" content="Bingwa Sokoni Automation App" />
-  <meta name="keywords" content="Bingwa Sokoni App" />
-  <meta name="keywords" content="Bingwa Auto" />
-  <meta name="keywords" content="Bingwa Auto App" />
-  <meta name="keywords" content="Bingwa Sokoni" />
-  <meta name="keywords" content="Bingwa Sokoni Automation" />
-  <meta name="keywords" content="Safaricom Bingwa Sokoni" />
-  <meta name="keywords" content="Bingwa Sokoni Agents" />
-  <meta name="keywords" content="bingwa sokoni agent" />
-  <meta name="keywords" content="Safaricom Bingwa Sokoni Automation App" />
-  <meta name="keywords" content="Bingwa Airtime Data SMS Minutes" />
-  <meta name="keywords" content="Bingwa Sokoni Automation" />
-  <meta name="keywords" content="Bingwa Automate" />
-  <meta name="keywords" content="Bingwa Sokoni Automate" />
-  <title>Bingwa Auto — Safaricom Bingwa Sokoni Bundle/SMS/MINUTES Automation</title>
+  <meta name="keywords" content="Bingwa Sokoni, Bingwa Auto, Safaricom Bingwa Sokoni Agent, Bingwa Sokoni Automation, USSD Automation, Bingwa Automation, Bundle Automation, Bingwa Sokoni App, Bingwa App, Bingwa Hybrid, Bingwa Flash, BSAT, Bingwa Sokoni Agent App, Kenya, Safaricom Automation, Bingwa Sokoni Automation App, Bingwa Airtime Data SMS Minutes, Bingwa Automate, Bingwa Sokoni Automate, Bingwa Sokoni App" />
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Bingwa Auto - Automate Safaricom Bingwa Sokoni Bundles" />
+  <meta property="og:description" content="Bingwa Auto automates Bingwa Sokoni bundle sales. Detects M-Pesa payments, matches offers, and executes USSD codes automatically. Download the free APK and start earning today." />
+  <meta property="og:image" content="https://www.bingwaauto.co.ke/og-image.jpg" />
+  <meta property="og:url" content="https://www.bingwaauto.co.ke/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bingwa Auto - Automate Safaricom Bingwa Sokoni Bundles" />
+  <meta name="twitter:description" content="Bingwa Auto automates Bingwa Sokoni bundle sales. Detects M-Pesa payments, matches offers, and executes USSD codes automatically." />
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.bingwaauto.co.ke/" />
+  
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="x-default" href="https://www.bingwaauto.co.ke/" />
+  
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Bingwa Auto",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Android 8.0+",
+    "description": "Automate Safaricom Bingwa Sokoni bundle sales. Detects M-Pesa payments and executes USSD codes automatically.",
+    "offers": {
+      "@type": "Offer",
+      "price": "20",
+      "priceCurrency": "KES"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Bingwa Auto",
+      "url": "https://www.bingwaauto.co.ke/"
+    }
+  }
+  </script>
+  
+  <title>Bingwa Auto - Automate Safaricom Bingwa Sokoni Bundles</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <link rel="icon" href="/favicon.png" type="image/png">
   <style>
 /* ─── Reset & Base ─────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -663,7 +693,7 @@ footer{
   font-weight:700;font-size:1.1rem;color:var(--green);
 }
 .foot-copy{font-size:.78rem;color:var(--muted)}
-.foot-links{display:flex;gap:24px}
+.foot-links{display:flex;gap:24px;flex-wrap:wrap}
 .foot-links a{
   font-size:.8rem;color:var(--muted);
   transition:color .2s;
@@ -676,10 +706,44 @@ footer{
   transition:opacity .75s cubic-bezier(.4,0,.2,1),transform .75s cubic-bezier(.4,0,.2,1);
 }
 .reveal.in{opacity:1;transform:translateY(0)}
+
+/* ─── Mobile improvements ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Better touch targets */
+  button, a, .btn-dl, .plan-btn, .nav-btn {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 12px 20px;
+  }
+  
+  /* Improved text readability */
+  .hero-headline {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+  }
+  
+  /* Better spacing */
+  .hero {
+    padding: 100px 0 40px !important;
+  }
+  
+  .container {
+    padding: 0 16px !important;
+  }
+  
+  /* Better blog cards on mobile */
+  .blog-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Better contact section */
+  .contact-links {
+    gap: 1rem !important;
+  }
+}
 </style>
 </head>
   <!-- Firebase SDKs -->
-<script type="module">
+<script type="module" defer>
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
   import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
 
@@ -1136,19 +1200,20 @@ footer{
         <span class="tag">Contact Us Today</span>
       </div>
       
-      <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Let’s Automate Your Bingwa Sokoni Business</h2>
+      <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Let's Automate Your Bingwa Sokoni Business</h2>
       <p style="margin-bottom: 1.5rem; color: #555;">Ready to streamline your workflows? Get in touch with Bingwa Auto via email, phone, or chat.</p>
       
       <!-- Clean Contact Links Layout -->
       <div class="contact-links" style="display: flex; flex-direction: column; gap: 0.75rem; align-items: center;">
         <p><strong>Email:</strong> <a href="mailto:bingwa.automate@gmail.com">bingwa.automate@gmail.com</a></p>
         <p><strong>Call Us:</strong> <a href="tel:+254702064973">0702064973</a> or <a href="tel:+254797677193">0797677193</a></p>
-        <p><strong>Chat:</strong> Connect instantly on <a href="https://wa.me/254702064973" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p><strong>Chat:</strong> Connect instantly on <a href="https://wa.me/254797677193" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
       </div>
 
     </div>
   </div>
 </section>
+
 <!-- CTA DOWNLOAD -->
 <section class="cta-section" id="download">
   <div class="container">
@@ -1243,6 +1308,14 @@ footer{
     <div class="foot-inner">
       <div class="foot-brand">Bingwa Auto</div>
       <div class="foot-copy">© 2025 Bingwa Auto. Made for Kenyan Bingwa Sokoni agents.</div>
+      <div class="foot-links">
+        <a href="https://wa.me/254797677193" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://www.youtube.com/@bingwaauto" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+        <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
     </div>
   </div>
 </footer>
