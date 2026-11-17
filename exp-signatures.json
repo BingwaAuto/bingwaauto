@@ -1,0 +1,2192 @@
+[
+    {
+        "offerId": "custom_1784836779029",
+        "ussd": "*180#",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Validate Phone\n7:Sell Home Fibre\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "2",
+                "expectedLabel": "Sh50=750MB+50SMS, 24hr",
+                "fullScreenText": "0. GO MONTHLY\n1. Sh20=250MB, 24hr\n2. Sh50=750MB+50SMS, 24hr\n3. Sh50=400MB, 7days\n4. Sh99=1.5GB, 24hr\n5. Daily Viusasa Bundle @10bob\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "Select payment mode\n1:Airtime\n2:M-Pesa\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1782084239912",
+        "ussd": "*544#",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "13",
+                "expectedLabel": "GIFT",
+                "fullScreenText": "0:Sh99=1.5GB 24hr\n1:PATAMORE\n2:Deals\n3:Sh20=250MB,24Hr\n4:Daily\n5:Weekly\n6:Monthly\n7:MakeBundle\n8:Okoa\n9:NoExpiry\n10:FunZone\n11:SocialBundle\n12:Data+\n13:GIFT\n14:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "0",
+                "expectedLabel": "Sh100=2GB 24hrs",
+                "fullScreenText": "Gift yourself or a friend\n0:Sh100=2GB 24hrs\n1:Sh20=250MB + 50SMS + WhatsApp\n2:Sh449=1GB+Spotify Premium\n3:Daily & Hourly\n4:Weekly & Monthly\n5:Music, Videos, Games\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number to gift (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "1:Airtime\n2:M-PESA\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Accept",
+                "fullScreenText": "Confirm purchase of Sh100=2GB 24hr for 0702064973\n1:Accept\n2:Decline\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1785587643147",
+        "ussd": "*444#",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "7",
+                "expectedLabel": "Easy-Talk",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:Data OFA\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Minutes\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE(NEW)\n10:Jimixie\n11:SMS Deals\n12:Bal\n#:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "9",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "1:Monthly\n2:Easy-Talk+\n3:Sh2000=2200Min,30day\n4:Sh1000=1000Min,30day\n5:Sh500=500Min,7day\n6:Sh250=200Min,7day\n7:Sh100=100Min,Midnyt\n8:Sh50=50Min,Midnyt\n9:Buy for Other\n10:FAQs\n0:BACK\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter other number:\n0XXX XXXXXX\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "5",
+                "expectedLabel": "Sh100=100Min,Midnyt",
+                "fullScreenText": "Easy-Talk Bundles:\n1:Buy Monthly\n2:Sh1000=1000Min,30day\n3:Sh500=500Min,7day\n4:Sh250=200Min,7day\n5:Sh100=100Min,Midnyt\n6:Sh50=50Min,Midnyt\n0:BACK\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "2",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "Pay with:\n1:MPESA\n2:Airtime\n0:BACK\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "1",
+                "expectedLabel": "Accept",
+                "fullScreenText": "Kindly confirm purchase of Easy-Talk One-Off bundle: 100 Minutes + 100SMS @Ksh 100 valid till midnight for 0702064973\n1:Accept\n2:Decline\n0:BACK 00:HOME\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1787947952546",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "12",
+                "expectedLabel": "GIFT",
+                "fullScreenText": "0:Sh20=1GB 1Hr\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=1GB 1hr",
+                "fullScreenText": "Gift yourself or a friend\n0:Sh100=2GB 24hrs\n1:Sh20=1GB 1hr\n2:Sh449=1GB+Spotify Premium\n3:Daily & Hourly\n4:Weekly & Monthly\n5:Music, Videos, Games\n6:Data Sambaza\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number to gift (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "1:Airtime\n2:M-PESA\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Accept",
+                "fullScreenText": "Confirm purchase of Sh20=1GB 1hr for 0702064973\n1:Accept\n2:Decline\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1782084082725",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "12",
+                "expectedLabel": "GIFT",
+                "fullScreenText": "0:Sh20=1GB 1Hr\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=1GB 1hr",
+                "fullScreenText": "Gift yourself or a friend\n0:Sh100=2GB 24hrs\n1:Sh20=1GB 1hr\n2:Sh449=1GB+Spotify Premium\n3:Daily & Hourly\n4:Weekly & Monthly\n5:Music, Videos, Games\n6:Data Sambaza\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number to gift (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "1:Airtime\n2:M-PESA\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Accept",
+                "fullScreenText": "Confirm purchase of Sh20=1GB 1hr for 0702064973\n1:Accept\n2:Decline\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1786569469453",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "3",
+                "expectedLabel": "Sh50=750MB+50SMS, 24hr",
+                "fullScreenText": "0. GO MONTHLY\n1. Sh20=1GB, 1hr\n2. Sh20=250MB, 24hr\n3. Sh50=750MB+50SMS, 24hr\n4. Sh50=400MB, 7days\n5. Sh99=1.5GB, 24hr\n6. Daily Viusasa Bundle @10bob\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "Select payment mode\n1:Airtime\n2:M-Pesa\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1787426098616",
+        "ussd": "",
+        "sim": 1,
+        "approved": false,
+        "verificationEnabled": false,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:Sh20=1GB 1Hr\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Daily Pata More",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "6",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "0:Data Plus\n1.Sh50=750MB+50SMS+WhatsApp 24hrs\n2.Sh99=1.5GB+50SMS+WhatsApp 24hrs\n3.Sh20=250MB+50SMS+WhatsApp 24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\n6:Buy for Other\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Sh50=750MB+50SMS+WhatsApp 24hrs",
+                "fullScreenText": "1.Sh50=750MB+50SMS+WhatsApp 24hrs\n2.Sh99=1.5GB+50SMS+WhatsApp 24hrs\n3.Sh20=250MB+50SMS+WhatsApp 24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "Confirm purchase of Daily 750MB+50SMS+WhatsApp\nPay with:\n\n1:Airtime\n2:M-Pesa\n0:BACK\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1788725587615",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "12",
+                "expectedLabel": "GIFT",
+                "fullScreenText": "0:Sh20=1GB 1Hr\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1788807828919",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "2",
+                "expectedLabel": "Sh50=750MB+50SMS, 24hr",
+                "fullScreenText": "0. GO MONTHLY\n1. Sh20=250MB, 24hr\n2. Sh50=750MB+50SMS, 24hr\n3. Sh50=400MB, 7days\n4. Sh99=1.5GB, 24hr\n5. Sh55= 1GB till midnight\n6. Daily Viusasa Bundle @10bob\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1788960998410",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=1GB, 1hr",
+                "fullScreenText": "0. GO MONTHLY\n1. Sh20=1GB, 1hr\n2. Sh20=250MB, 24hr\n3. Sh50=750MB+50SMS, 24hr\n4. Sh50=400MB, 7days\n5. Sh99=1.5GB, 24hr\n6. Sh55= 1GB till midnight\n7. \n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1789015689432",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "7",
+                "expectedLabel": "Sh50=1.5GB,3hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1789052957570",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=1GB,1hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1782337301106",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0",
+                "expectedLabel": "Monthly",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Sh250=2.5GB, 30day",
+                "fullScreenText": "1:Sh250=2.5GB, 30day\n2:Sh500=300Min 30day\n3:Sh500=7GB, 30day\n4:Sh1000=800Min,30day\n5:Sh1000=21GB, 30day\n6:Sh1000=8GB+400Mins 30day\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1790014287080",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "13",
+                "expectedLabel": "GIFT",
+                "fullScreenText": "0:Sh50=750MB 24hr\n1:PATAMORE\n2:Deals\n3:Sh20=400MB,1Hr\n4:Daily\n5:Weekly\n6:Monthly\n7:MakeBundle\n8:Okoa\n9:NoExpiry\n10:FunZone\n11:SocialBundle\n12:Data+\n13:GIFT\n14:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "0",
+                "expectedLabel": "Sh100=2GB 24hrs",
+                "fullScreenText": "Gift yourself or a friend\n0:Sh100=2GB 24hrs\n1:Sh20=250MB + 50SMS + WhatsApp\n2:Sh449=1GB+Spotify Premium\n3:Daily & Hourly\n4:Weekly & Monthly\n5:Music, Videos, Games\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number to gift (0XXXXXXXXX)\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1790697372479",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0",
+                "expectedLabel": "Monthly",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "3",
+                "expectedLabel": "Sh500=7GB, 30day",
+                "fullScreenText": "1:Sh250=2.5GB, 30day\n2:Sh500=300Min 30day\n3:Sh500=7GB, 30day\n4:Sh1000=800Min,30day\n5:Sh1000=21GB, 30day\n6:Sh1000=8GB+400Mins 30day\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1791232463258",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Monthly",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "8",
+                "expectedLabel": "Buy For Other",
+                "fullScreenText": "0:Sh1000=8GB+400MINS+100SMS\n1:All In One\n2:Data Plans\n3:HOT Deals\n4:Chagua Bei Yako\n5:5G Plans\n6:Join Emerald\n7:GO Monthly Plus\n8:Buy For Other\n9:Join Postpay+Device\n00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "00",
+                "expectedLabel": "",
+                "fullScreenText": "1:Data Only Plans\n2:All In One\n3:Sh399=1.5GB+Spotify Premium(NEW)\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "0",
+                "expectedLabel": "Hourly Bundles",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "2",
+                "expectedLabel": "Sh50=1.5GB 3hr",
+                "fullScreenText": "1.Sh20=1GB 1Hr\n2.Sh50=1.5GB 3hr\n3.Sh100=2.2GB 3hr\n4.Sh30=450MB midnight\n5.Sh50=800MB  midnight\n6.Sh55=900MB midnight\n7.Sh75=1250MB midnight  \n8.Sh100=1750MB midnight\n0:BACK 00:HOME\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1786349468482",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Daily Pata More",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "6",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "0:Data Plus\n1.Sh99=1.5GB+40SMS+BAZE ,24hrs\n2.Sh50=750MB+40SMS+BAZE ,24hrs\n3.Sh20=250MB+30SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\n6:Buy for Other\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "2",
+                "expectedLabel": "Sh50=750MB+40SMS+BAZE ,24hrs",
+                "fullScreenText": "1.Sh99=1.5GB+40SMS+BAZE ,24hrs\n2.Sh50=750MB+40SMS+BAZE ,24hrs\n3.Sh20=250MB+30SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1791315284404",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Daily Pata More",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "6",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "0:Data Plus\n1.Sh99=1.5GB+40SMS+BAZE ,24hrs\n2.Sh50=750MB+40SMS+BAZE ,24hrs\n3.Sh20=250MB+30SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\n6:Buy for Other\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Sh99=1.5GB+40SMS+BAZE ,24hrs",
+                "fullScreenText": "1.Sh99=1.5GB+40SMS+BAZE ,24hrs\n2.Sh50=750MB+40SMS+BAZE ,24hrs\n3.Sh20=250MB+30SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1785524050799",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=1GB,1hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1781880806298",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "98",
+                "expectedLabel": "MORE",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Minutes\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "11",
+                "expectedLabel": "SMS",
+                "fullScreenText": "10:Jimixie\n11:SMS\n12:Bal\n#:MORE\n0:BACK\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "8",
+                "expectedLabel": "Gift SMS",
+                "fullScreenText": "0:Text To WIN\n1:Sh10=15 Mins,1hr\n2:Sh20=Unlimited SMS daily\n3:Minutes OFA MOTO\n4:Daily SMS\n5:Weekly SMS\n6:Monthly\n7:Okoa Deals\n8:Gift SMS\n9:Okoa SMS\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Buy Daily SMS Bundle",
+                "fullScreenText": "Gift SMS\n1:Buy Daily SMS Bundle\n2:Buy Weekly SMS Bundle\n3:Buy Monthly SMS Bundle\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "20 SMS daily at 5/-",
+                "fullScreenText": "1:20 SMS daily at 5/-\n2:200 SMS daily at 10/-\n3:Unlimited SMS daily at 20/-\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter the other number\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "00",
+                "expectedLabel": "",
+                "fullScreenText": "Please confirm purchase of 20 SMS at 5 Ksh for 0702064973\n1:Accept\n2:Cancel\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 7,
+                "selectedOption": "#",
+                "expectedLabel": "",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Minutes\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 8,
+                "selectedOption": "7",
+                "expectedLabel": "Hot Minutes",
+                "fullScreenText": "Select option:\n1:Chagua bei Yako\n2:Family Connect\n3:Tunukiwa Gift\n4:Daima (Line4Life)\n5:Stori Ibambe\n6:Bonga Airtime\n7:Hot Minutes\n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 9,
+                "selectedOption": "2",
+                "expectedLabel": "Sh50 (60 Mins, Midnight)",
+                "fullScreenText": "1:Sh20 (45 Mins, 3hrs)\n2:Sh50 (60 Mins, Midnight)\n3:Sh300 (375 Mins, 7 days)\n4:Sh1000 (1250 Mins, 30 days)\n5:Sh2000 (3077 Mins, 30 days)\n0:BACK\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1792577444644",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Monthly",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "8",
+                "expectedLabel": "Buy For Other",
+                "fullScreenText": "0:Sh1000=8GB+400MINS+100SMS\n1:All In One\n2:Data Plans\n3:HOT Deals\n4:Chagua Bei Yako\n5:5G Plans\n6:Join Emerald\n7:GO Monthly Plus\n8:Buy For Other\n9:Minutes Plans\n00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "00",
+                "expectedLabel": "",
+                "fullScreenText": "1:Data Only Plans\n2:All In One\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "0",
+                "expectedLabel": "Hourly Bundles",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "6",
+                "expectedLabel": "Sh55=900MB midnight",
+                "fullScreenText": "1.Sh20=1GB+BAZE 1Hr\n2.Sh50=1.5GB 3hr\n3.Sh100=2.2GB 3hr\n4.Sh30=450MB midnight\n5.Sh50=800MB  midnight\n6.Sh55=900MB midnight\n7.Sh75=1250MB midnight  \n8.Sh100=\n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1789058382129",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=400MB,1hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=400MB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Daily Viusasa Bundle @10bob\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793094144266",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Weekly Pata More",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "98",
+                "expectedLabel": "",
+                "fullScreenText": "1.Sh999=25GB+Free YouTube 7day\n2.Sh500=4GB+220Mins+50SMS 7day\n3.Sh500=11GB+Free YouTube 7day\n4.Sh300=2GB+ 140Mins+30SMS 7day\n5.Sh250=3.2GB+ Free YouTube 7day\n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "8",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "6.Sh99=1.1GB+Free YouTube 7day\n7.Sh50=400MB 7day\n8:Buy for Other\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "98",
+                "expectedLabel": "MORE",
+                "fullScreenText": "1.Sh999=25GB+Free YouTube 7day\n2.Sh500=4GB+220Mins+50SMS 7day\n3.Sh500=11GB+Free YouTube 7day\n4.Sh300=2GB+ 140Mins+30SMS 7day\n5.Sh250=3.2GB+ Free YouTube 7day\n6.Sh99=1.1GB+\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "7",
+                "expectedLabel": "Sh50=400MB 7day",
+                "fullScreenText": "Free YouTube 7day\n7.Sh50=400MB 7day\n0:BACK\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1786282901811",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Daily Pata More",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "6",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "0:Data Plus\n1.Sh20=250MB+30SMS+BAZE ,24hrs\n2.Sh99=1.5GB+40SMS+BAZE ,24hrs\n3.Sh50=750MB+40SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\n6:Buy for Other\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=250MB+30SMS+BAZE ,24hrs",
+                "fullScreenText": "1.Sh20=250MB+30SMS+BAZE ,24hrs\n2.Sh99=1.5GB+40SMS+BAZE ,24hrs\n3.Sh50=750MB+40SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "b1",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=1GB,1hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "b2",
+        "ussd": "*180#",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Validate Phone\n7:Sell Home Fibre\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=250MB, 24hr",
+                "fullScreenText": "0. GO MONTHLY\n1. Sh20=250MB, 24hr\n2. Sh50=750MB+50SMS, 24hr\n3. Sh50=400MB, 7days\n4. Sh99=1.5GB, 24hr\n5. Daily Viusasa Bundle @10bob\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "Select payment mode\n1:Airtime\n2:M-Pesa\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "b3",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "12",
+                "expectedLabel": "GIFT",
+                "fullScreenText": "0:Sh20=1GB 1Hr\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=1GB 1hr",
+                "fullScreenText": "Gift yourself or a friend\n0:Sh100=2GB 24hrs\n1:Sh20=1GB 1hr\n2:Sh449=1GB+Spotify Premium\n3:Daily & Hourly\n4:Weekly & Monthly\n5:Music, Videos, Games\n6:Data Sambaza\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number to gift (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "1:Airtime\n2:M-PESA\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Accept",
+                "fullScreenText": "Confirm purchase of Sh20=1GB 1hr for 0702064973\n1:Accept\n2:Decline\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "b4",
+        "ussd": "*180#",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Validate Phone\n7:Sell Home Fibre\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "3",
+                "expectedLabel": "Sh50=400MB, 7days",
+                "fullScreenText": "0. GO MONTHLY\n1. Sh20=250MB, 24hr\n2. Sh50=750MB+50SMS, 24hr\n3. Sh50=400MB, 7days\n4. Sh99=1.5GB, 24hr\n5. Daily Viusasa Bundle @10bob\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "Select payment mode\n1:Airtime\n2:M-Pesa\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "b5",
+        "ussd": "*180#",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Validate Phone\n7:Sell Home Fibre\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "2",
+                "expectedLabel": "Sh50=750MB+50SMS, 24hr",
+                "fullScreenText": "0. GO MONTHLY\n1. Sh20=250MB, 24hr\n2. Sh50=750MB+50SMS, 24hr\n3. Sh50=400MB, 7days\n4. Sh99=1.5GB, 24hr\n5. Daily Viusasa Bundle @10bob\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "Select payment mode\n1:Airtime\n2:M-Pesa\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "b6",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "7",
+                "expectedLabel": "Sh50=1.5GB,3hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "b7",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "5",
+                "expectedLabel": "Sh55= 1GB till midnight",
+                "fullScreenText": "0. GO MONTHLY\n1. Sh20=250MB, 24hr\n2. Sh50=750MB+50SMS, 24hr\n3. Sh50=400MB, 7days\n4. Sh99=1.5GB, 24hr\n5. Sh55= 1GB till midnight\n6. Daily Viusasa Bundle @10bob\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "b8",
+        "ussd": "*180#",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Validate Phone\n7:Sell Home Fibre\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "4",
+                "expectedLabel": "Sh99=1.5GB, 24hr",
+                "fullScreenText": "0. GO MONTHLY\n1. Sh20=250MB, 24hr\n2. Sh50=750MB+50SMS, 24hr\n3. Sh50=400MB, 7days\n4. Sh99=1.5GB, 24hr\n5. Daily Viusasa Bundle @10bob\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "Select payment mode\n1:Airtime\n2:M-Pesa\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "ts1",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "8",
+                "expectedLabel": "Gift SMS",
+                "fullScreenText": "0:Text To WIN\n1:Sh10=15 Mins,1hr\n2:Sh20=Unlimited SMS daily\n3:Minutes OFA MOTO\n4:Daily SMS\n5:Weekly SMS\n6:Monthly\n7:Okoa Deals\n8:Gift SMS\n9:Okoa SMS\n10:Sambaza Furaha\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Buy Daily SMS Bundle",
+                "fullScreenText": "Gift SMS\n1:Buy Daily SMS Bundle\n2:Buy Weekly SMS Bundle\n3:Buy Monthly SMS Bundle\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "1",
+                "expectedLabel": "20 SMS daily at 5/-",
+                "fullScreenText": "1:20 SMS daily at 5/-\n2:200 SMS daily at 10/-\n3:Unlimited SMS daily at 20/-\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter the other number\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Accept",
+                "fullScreenText": "Please confirm purchase of 20 SMS at 5 Ksh for 0702064973\n1:Accept\n2:Cancel\n0:BACK 00:HOME\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "ts2",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "8",
+                "expectedLabel": "Gift SMS",
+                "fullScreenText": "0:Text To WIN\n1:Sh10=15 Mins,1hr\n2:Sh20=Unlimited SMS daily\n3:Minutes OFA MOTO\n4:Daily SMS\n5:Weekly SMS\n6:Monthly\n7:Okoa Deals\n8:Gift SMS\n9:Okoa SMS\n10:Sambaza Furaha\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Buy Daily SMS Bundle",
+                "fullScreenText": "Gift SMS\n1:Buy Daily SMS Bundle\n2:Buy Weekly SMS Bundle\n3:Buy Monthly SMS Bundle\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "2",
+                "expectedLabel": "200 SMS daily at 10/-",
+                "fullScreenText": "1:20 SMS daily at 5/-\n2:200 SMS daily at 10/-\n3:Unlimited SMS daily at 20/-\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter the other number\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Accept",
+                "fullScreenText": "Please confirm purchase of 200 SMS at 10 Ksh for 0702064973\n1:Accept\n2:Cancel\n0:BACK 00:HOME\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "ts3",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "8",
+                "expectedLabel": "Gift SMS",
+                "fullScreenText": "0:Text To WIN\n1:Sh10=15 Mins,1hr\n2:Sh20=Unlimited SMS daily\n3:Minutes OFA MOTO\n4:Daily SMS\n5:Weekly SMS\n6:Monthly\n7:Okoa Deals\n8:Gift SMS\n9:Okoa SMS\n10:Sambaza Furaha\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Buy Weekly SMS Bundle",
+                "fullScreenText": "Gift SMS\n1:Buy Daily SMS Bundle\n2:Buy Weekly SMS Bundle\n3:Buy Monthly SMS Bundle\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "2",
+                "expectedLabel": "1000 SMS at 30 Ksh",
+                "fullScreenText": "Please select your option\n1:100 SMS at 20 Ksh\n2:1000 SMS at 30 Ksh\n3:Unlimited SMS at 50 Ksh\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter the other number\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Accept",
+                "fullScreenText": "Please confirm purchase of 1000 SMS at 30 Ksh for 0702064973\n1:Accept\n2:Cancel\n0:BACK 00:HOME\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "ts4",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "8",
+                "expectedLabel": "Gift SMS",
+                "fullScreenText": "0:Text To WIN\n1:Sh10=15 Mins,1hr\n2:Sh20=Unlimited SMS daily\n3:Minutes OFA MOTO\n4:Daily SMS\n5:Weekly SMS\n6:Monthly\n7:Okoa Deals\n8:Gift SMS\n9:Okoa SMS\n10:Sambaza Furaha\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "3",
+                "expectedLabel": "Buy Monthly SMS Bundle",
+                "fullScreenText": "Gift SMS\n1:Buy Daily SMS Bundle\n2:Buy Weekly SMS Bundle\n3:Buy Monthly SMS Bundle\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "1",
+                "expectedLabel": "1500 SMS at 100 Ksh",
+                "fullScreenText": "Please select your option\n1:1500 SMS at 100 Ksh\n2:3500 SMS at 200 Ksh\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter the other number\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Accept",
+                "fullScreenText": "Please confirm purchase of 1500 SMS at 100/- for 0702064973\n1:Accept\n2:Cancel\n0:BACK 00:HOME\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793485221659",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Daily Pata More",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "6",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "0:Data Plus\n1.Sh20=250MB+30SMS+BAZE ,24hrs\n2.Sh99=1.5GB+40SMS+BAZE ,24hrs\n3.Sh50=750MB+40SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\n6:Buy for Other\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=250MB+30SMS+BAZE ,24hrs",
+                "fullScreenText": "1.Sh20=250MB+30SMS+BAZE ,24hrs\n2.Sh99=1.5GB+40SMS+BAZE ,24hrs\n3.Sh50=750MB+40SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793485552191",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Weekly Pata More",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "98",
+                "expectedLabel": "",
+                "fullScreenText": "1.Sh999=25GB+Free YouTube 7day\n2.Sh500=4GB+220Mins+50SMS 7day\n3.Sh500=11GB+Free YouTube 7day\n4.Sh300=2GB+ 140Mins+30SMS 7day\n5.Sh250=3.2GB+ Free YouTube 7day\n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "8",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "6.Sh99=1.1GB+Free YouTube 7day\n7.Sh50=400MB 7day\n8:Buy for Other\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "98",
+                "expectedLabel": "MORE",
+                "fullScreenText": "1.Sh999=25GB+Free YouTube 7day\n2.Sh500=4GB+220Mins+50SMS 7day\n3.Sh500=11GB+Free YouTube 7day\n4.Sh300=2GB+ 140Mins+30SMS 7day\n5.Sh250=3.2GB+ Free YouTube 7day\n6.Sh99=1.1GB+\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "7",
+                "expectedLabel": "Sh50=400MB 7day",
+                "fullScreenText": "Free YouTube 7day\n7.Sh50=400MB 7day\n0:BACK\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793485761010",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Daily Pata More",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "6",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "0:Data Plus\n1.Sh20=250MB+30SMS+BAZE ,24hrs\n2.Sh99=1.5GB+40SMS+BAZE ,24hrs\n3.Sh50=750MB+40SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\n6:Buy for Other\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "3",
+                "expectedLabel": "Sh50=750MB+40SMS+BAZE ,24hrs",
+                "fullScreenText": "1.Sh20=250MB+30SMS+BAZE ,24hrs\n2.Sh99=1.5GB+40SMS+BAZE ,24hrs\n3.Sh50=750MB+40SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793486005342",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Monthly",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "8",
+                "expectedLabel": "Buy For Other",
+                "fullScreenText": "0:Sh1000=8GB+400MINS+100SMS\n1:All In One\n2:Data Plans\n3:HOT Deals\n4:Chagua Bei Yako\n5:5G Plans\n6:Join Emerald\n7:GO Monthly Plus\n8:Buy For Other\n9:Minutes Plans\n00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "00",
+                "expectedLabel": "",
+                "fullScreenText": "1:Data Only Plans\n2:All In One\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "0",
+                "expectedLabel": "Hourly Bundles",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "2",
+                "expectedLabel": "Sh50=1.5GB 3hr",
+                "fullScreenText": "1.Sh20=1GB+BAZE 1Hr\n2.Sh50=1.5GB 3hr\n3.Sh100=2.2GB 3hr\n4.Sh30=450MB midnight\n5.Sh50=800MB  midnight\n6.Sh55=900MB midnight\n7.Sh75=1.2GB midnight\n8.Sh100=1.7GB \n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793486171146",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Monthly",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "8",
+                "expectedLabel": "Buy For Other",
+                "fullScreenText": "0:Sh1000=8GB+400MINS+100SMS\n1:All In One\n2:Data Plans\n3:HOT Deals\n4:Chagua Bei Yako\n5:5G Plans\n6:Join Emerald\n7:GO Monthly Plus\n8:Buy For Other\n9:Minutes Plans\n00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "00",
+                "expectedLabel": "",
+                "fullScreenText": "1:Data Only Plans\n2:All In One\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "0",
+                "expectedLabel": "Hourly Bundles",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "6",
+                "expectedLabel": "Sh55=900MB midnight",
+                "fullScreenText": "1.Sh20=1GB+BAZE 1Hr\n2.Sh50=1.5GB 3hr\n3.Sh100=2.2GB 3hr\n4.Sh30=450MB midnight\n5.Sh50=800MB  midnight\n6.Sh55=900MB midnight\n7.Sh75=1.2GB midnight\n8.Sh100=1.7GB \n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793486327675",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Daily\n4:Weekly\n5:Monthly\n6:MakeBundle\n7:Okoa\n8:NoExpiry\n9:FunZone\n10:SocialBundle\n11:Data+\n12:GIFT\n13:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "1",
+                "expectedLabel": "Daily Pata More",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Boda\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "6",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "0:Data Plus\n1.Sh20=250MB+30SMS+BAZE ,24hrs\n2.Sh99=1.5GB+40SMS+BAZE ,24hrs\n3.Sh50=750MB+40SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\n6:Buy for Other\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "2",
+                "expectedLabel": "Sh99=1.5GB+40SMS+BAZE ,24hrs",
+                "fullScreenText": "1.Sh20=250MB+30SMS+BAZE ,24hrs\n2.Sh99=1.5GB+40SMS+BAZE ,24hrs\n3.Sh50=750MB+40SMS+BAZE ,24hrs\n4.Sh10=60MB+15SMS 24hrs\n5.Sh5=10MB+7SMS 24hrs\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793487021574",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0",
+                "expectedLabel": "Monthly",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "3",
+                "expectedLabel": "Sh500=7GB, 30day",
+                "fullScreenText": "1:Sh250=2.5GB, 30day\n2:Sh500=300Min 30day\n3:Sh500=7GB, 30day\n4:Sh1000=800Min,30day\n5:Sh1000=21GB, 30day\n6:Sh1000=8GB+400Mins 30day\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793487131260",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0",
+                "expectedLabel": "Monthly",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "Sh250=2.5GB, 30day",
+                "fullScreenText": "1:Sh250=2.5GB, 30day\n2:Sh500=300Min 30day\n3:Sh500=7GB, 30day\n4:Sh1000=800Min,30day\n5:Sh1000=21GB, 30day\n6:Sh1000=8GB+400Mins 30day\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793487665979",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "3",
+                "expectedLabel": "Sh50=750MB+50SMS,24hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793486522318",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=400MB,1hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=400MB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Daily Viusasa Bundle @10bob\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793486681012",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "6",
+                "expectedLabel": "Monthly",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Sh20=400MB,1Hr\n4:Daily\n5:Weekly\n6:Monthly\n7:MakeBundle\n8:Okoa\n9:NoExpiry\n10:FunZone\n11:SocialBundle\n12:Data+\n13:GIFT\n14:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "8",
+                "expectedLabel": "Buy For Other",
+                "fullScreenText": "0:Sh1000=8GB+400MINS+100SMS\n1:All In One\n2:Data Plans\n3:HOT Deals\n4:Chagua Bei Yako\n5:5G Plans\n6:Join Emerald\n7:GO Monthly Plus\n8:Buy For Other\n9:Minutes Plans\n00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please Enter Other Number\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "00",
+                "expectedLabel": "",
+                "fullScreenText": "1:Data Only Plans\n2:All In One\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "1",
+                "expectedLabel": "PATAMORE",
+                "fullScreenText": "0:90GB+1200Min@3000\n1:PATAMORE\n2:Deals\n3:Sh20=400MB,1Hr\n4:Daily\n5:Weekly\n6:Monthly\n7:MakeBundle\n8:Okoa\n9:NoExpiry\n10:FunZone\n11:SocialBundle\n12:Data+\n13:GIFT\n14:Mins\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "0",
+                "expectedLabel": "Hourly Bundles",
+                "fullScreenText": "0:Hourly Bundles\n1:Daily Pata More\n2:Weekly Pata More\n3:Monthly Pata More\n4:Bundle Ya Wakulima\n5:Bundle Ya Deree\n6:Ofa Ya Bodaa\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20=400MB 1Hr",
+                "fullScreenText": "1.Sh20=400MB 1Hr\n2.Sh50=1GB 1Hr\n3.Sh100=2.2GB 3hr\n4.Sh30=450MB midnight\n5.Sh50=800MB  midnight\n6.Sh55=900MB midnight\n7.Sh75=1.2GB midnight\n8.Sh100=1.7GB midnight\n0:BACK 00:HOME\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "m1",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "11",
+                "expectedLabel": "SMS",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Mins\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n10:Jimixie\n11:SMS\n12:Bal\n#:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "8",
+                "expectedLabel": "Gift SMS",
+                "fullScreenText": "0:Text To WIN\n1:Sh10=15 Mins,1hr\n2:Sh20=Unlimited SMS daily\n3:Minutes OFA MOTO\n4:Daily SMS\n5:Weekly SMS\n6:Monthly\n7:Okoa Deals\n8:Gift SMS\n9:Okoa SMS\n10:Sambaza Furaha\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "1",
+                "expectedLabel": "Buy Daily SMS Bundle",
+                "fullScreenText": "Gift SMS\n1:Buy Daily SMS Bundle\n2:Buy Weekly SMS Bundle\n3:Buy Monthly SMS Bundle\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "20 SMS daily at 5/-",
+                "fullScreenText": "1:20 SMS daily at 5/-\n2:200 SMS daily at 10/-\n3:Unlimited SMS daily at 20/-\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter the other number\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "00",
+                "expectedLabel": "",
+                "fullScreenText": "Please confirm purchase of 20 SMS at 5 Ksh for 0702064973\n1:Accept\n2:Cancel\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "#",
+                "expectedLabel": "MORE",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Mins\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n10:Jimixie\n11:SMS\n12:Bal\n#:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 7,
+                "selectedOption": "7",
+                "expectedLabel": "Hot Minutes",
+                "fullScreenText": "Select option:\n1:Chagua bei Yako\n2:Family Connect\n3:Tunukiwa Gift\n4:Daima (Line4Life)\n5:Stori Ibambe\n6:Bonga Airtime\n7:Hot Minutes\n8:Okoa Deals\n9:Tunukiwa Plus\n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 8,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20 (45 Mins, 3hrs)",
+                "fullScreenText": "1:Sh20 (45 Mins, 3hrs)\n2:Sh50 (60 Mins, Midnight)\n3:Sh300 (375 Mins, 7 days)\n4:Sh1000 (1250 Mins, 30 days)\n5:Sh2000 (3077 Mins, 30 days)\n0:BACK\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793580798983",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "11",
+                "expectedLabel": "SMS",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Mins\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n10:Jimixie\n11:SMS\n12:Bal\n#:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "8",
+                "expectedLabel": "Gift SMS",
+                "fullScreenText": "0:Text To WIN\n1:Sh10=15 Mins,1hr\n2:Sh20=Unlimited SMS daily\n3:Minutes OFA MOTO\n4:Daily SMS\n5:Weekly SMS\n6:Monthly\n7:Okoa Deals\n8:Gift SMS\n9:Okoa SMS\n10:Sambaza Furaha\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "1",
+                "expectedLabel": "Buy Daily SMS Bundle",
+                "fullScreenText": "Gift SMS\n1:Buy Daily SMS Bundle\n2:Buy Weekly SMS Bundle\n3:Buy Monthly SMS Bundle\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "20 SMS daily at 5/-",
+                "fullScreenText": "1:20 SMS daily at 5/-\n2:200 SMS daily at 10/-\n3:Unlimited SMS daily at 20/-\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter the other number\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "00",
+                "expectedLabel": "",
+                "fullScreenText": "Please confirm purchase of 20 SMS at 5 Ksh for 0702064973\n1:Accept\n2:Cancel\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "#",
+                "expectedLabel": "MORE",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Mins\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n10:Jimixie\n11:SMS\n12:Bal\n#:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 7,
+                "selectedOption": "7",
+                "expectedLabel": "Hot Minutes",
+                "fullScreenText": "Select option:\n1:Chagua bei Yako\n2:Family Connect\n3:Tunukiwa Gift\n4:Daima (Line4Life)\n5:Stori Ibambe\n6:Bonga Airtime\n7:Hot Minutes\n8:Okoa Deals\n9:Tunukiwa Plus\n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 8,
+                "selectedOption": "1",
+                "expectedLabel": "Sh20 (45 Mins, 3hrs)",
+                "fullScreenText": "1:Sh20 (45 Mins, 3hrs)\n2:Sh50 (60 Mins, Midnight)\n3:Sh300 (375 Mins, 7 days)\n4:Sh1000 (1250 Mins, 30 days)\n5:Sh2000 (3077 Mins, 30 days)\n0:BACK\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "m2",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "11",
+                "expectedLabel": "SMS",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Mins\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n10:Jimixie\n11:SMS\n12:Bal\n#:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "8",
+                "expectedLabel": "Gift SMS",
+                "fullScreenText": "0:Text To WIN\n1:Sh10=15 Mins,1hr\n2:Sh20=Unlimited SMS daily\n3:Minutes OFA MOTO\n4:Daily SMS\n5:Weekly SMS\n6:Monthly\n7:Okoa Deals\n8:Gift SMS\n9:Okoa SMS\n10:Sambaza Furaha\n98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "1",
+                "expectedLabel": "Buy Daily SMS Bundle",
+                "fullScreenText": "Gift SMS\n1:Buy Daily SMS Bundle\n2:Buy Weekly SMS Bundle\n3:Buy Monthly SMS Bundle\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "1",
+                "expectedLabel": "20 SMS daily at 5/-",
+                "fullScreenText": "1:20 SMS daily at 5/-\n2:200 SMS daily at 10/-\n3:Unlimited SMS daily at 20/-\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter the other number\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 5,
+                "selectedOption": "00",
+                "expectedLabel": "",
+                "fullScreenText": "Please confirm purchase of 20 SMS at 5 Ksh for 0702064973\n1:Accept\n2:Cancel\n0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 6,
+                "selectedOption": "#",
+                "expectedLabel": "MORE",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Mins\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n10:Jimixie\n11:SMS\n12:Bal\n#:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 7,
+                "selectedOption": "7",
+                "expectedLabel": "Hot Minutes",
+                "fullScreenText": "Select option:\n1:Chagua bei Yako\n2:Family Connect\n3:Tunukiwa Gift\n4:Daima (Line4Life)\n5:Stori Ibambe\n6:Bonga Airtime\n7:Hot Minutes\n8:Okoa Deals\n9:Tunukiwa Plus\n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 8,
+                "selectedOption": "2",
+                "expectedLabel": "Sh50 (60 Mins, Midnight)",
+                "fullScreenText": "1:Sh20 (45 Mins, 3hrs)\n2:Sh50 (60 Mins, Midnight)\n3:Sh300 (375 Mins, 7 days)\n4:Sh1000 (1250 Mins, 30 days)\n5:Sh2000 (3077 Mins, 30 days)\n0:BACK\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "m4",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "#",
+                "expectedLabel": "MORE",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Mins\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n10:Jimixie\n11:SMS\n12:Bal\n#:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "3",
+                "expectedLabel": "Tunukiwa Gift",
+                "fullScreenText": "Select option:\n1:Chagua bei Yako\n2:Family Connect\n3:Tunukiwa Gift\n4:Daima (Line4Life)\n5:Stori Ibambe\n6:Bonga Airtime\n7:Hot Minutes\n8:Okoa Deals\n9:Tunukiwa Plus\n0:BACK 00:HOME 98:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "1",
+                "expectedLabel": "Gift a friend",
+                "fullScreenText": "1:Gift a friend\n2:Unlock your Gift\n3:Dandia Offers\n4:More Gifts\n0:BACK\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter mobile number to receive the Gift:\n0:BACK\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "5",
+                "expectedLabel": "Sh200=250 Mins,7days",
+                "fullScreenText": "Sambaza Furaha\n1:Sh10=Unlimited SMS,midnight\n2:Sh20=43 Mins,3hrs\n3:Sh50=Kredo 200,Midnyt\n4:Sh20=20 Mins,Midnight\n5:Sh200=250 Mins,7days\n6:Sh1000=1250Mins,30days\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "b9",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "5",
+                "expectedLabel": "Sh99=1.5GB,24hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "custom_1793487453800",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "5",
+                "expectedLabel": "Bingwa Sokoni",
+                "fullScreenText": "Welcome\n1:SIM Swap\n2:Subscriber Registration\n3:Get PUK Number\n4:Bonga Redemption\n5:Bingwa Sokoni\n6:Bamba Poa\n7:Lipa Mdogo Mdogo\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "2",
+                "expectedLabel": "Sell Data Bundles",
+                "fullScreenText": "1:Sell Calls & SMS Bundles\n2:Sell Data Bundles\n3:Sell Phone\n4:Recommend My OneApp\n5:Bundle ya Wakulima\n6:Digifarm Cash Advance\n98:MORE 0:BACK 00:HOME\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Enter customer number (0XXXXXXXXX)\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "5",
+                "expectedLabel": "Sh99=1.5GB,24hr",
+                "fullScreenText": "0:Monthly\n1:Sh20=1GB,1hr\n2:Sh20=250MB,24hr\n3:Sh50=750MB+50SMS,24hr\n4:Sh50=400MB,7days\n5:Sh99=1.5GB,24hr\n6:Sh55=1GB till midnight\n7:Sh50=1.5GB,3hr\n8:\n98:MORE\nCancel\nSend"
+            }
+        ]
+    },
+    {
+        "offerId": "m3",
+        "ussd": "",
+        "sim": 1,
+        "approved": true,
+        "verificationEnabled": true,
+        "steps": [
+            {
+                "stepIndex": 0,
+                "selectedOption": "7",
+                "expectedLabel": "Easy-Talk",
+                "fullScreenText": "0:Sh20=43 Mins,3hrs\n1:PataMore Data\n2:Minutes OFA MOTO\n3:Dabo Kredo\n4:Talkmore Mins\n5:FLEX\n6:Okoa Calls\n7:Easy-Talk\n8:Global Connect\n9:FUNZONE\n10:Jimixie\n11:SMS\n12:Bal\n#:MORE\nCancel\nSend"
+            },
+            {
+                "stepIndex": 1,
+                "selectedOption": "9",
+                "expectedLabel": "Buy for Other",
+                "fullScreenText": "1:Monthly\n2:Easy-Talk+\n3:Sh2000=2200Min,30day\n4:Sh1000=1000Min,30day\n5:Sh500=500Min,7day\n6:Sh250=200Min,7day\n7:Sh100=100Min,Midnyt\n8:Sh50=50Min,Midnyt\n9:Buy for Other\n10:FAQs\n0:BACK\nCancel\nSend"
+            },
+            {
+                "stepIndex": 2,
+                "selectedOption": "0702064973",
+                "expectedLabel": "",
+                "fullScreenText": "Please enter other number:\n0XXX XXXXXX\nCancel\nSend"
+            },
+            {
+                "stepIndex": 3,
+                "selectedOption": "5",
+                "expectedLabel": "Sh100=100Min,Midnyt",
+                "fullScreenText": "Easy-Talk Bundles:\n1:Buy Monthly\n2:Sh1000=1000Min,30day\n3:Sh500=500Min,7day\n4:Sh250=200Min,7day\n5:Sh100=100Min,Midnyt\n6:Sh50=50Min,Midnyt\n0:BACK\nCancel\nSend"
+            },
+            {
+                "stepIndex": 4,
+                "selectedOption": "2",
+                "expectedLabel": "Airtime",
+                "fullScreenText": "Pay with:\n1:MPESA\n2:Airtime\n0:BACK\nCancel\nSend"
+            }
+        ]
+    }
+]
